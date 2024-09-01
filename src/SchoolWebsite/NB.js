@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
-import { FaYoutube } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
 import Logo from './Logo1.2.png'; // Adjust the import according to your file structure
 
 export default function NB() {
@@ -139,6 +139,22 @@ export default function NB() {
                                     <span className="sr-only">Youtube</span>
                                     <FaYoutube size={23} />
                                 </a>
+                            </li>
+                             <li className="lg:pt-2">
+                             <a 
+        href="https://www.instagram.com/prabhuram_gurukul99/" 
+        className="text-white hover:text-[#E1306C]">
+        <span className="sr-only">Instagram</span>
+        <FaInstagram size={23} />
+    </a>
+                            </li>
+                            <li className="lg:pt-2">
+                             <a 
+        href="https://www.facebook.com/prabhuram.gurukul99?mibextid=LQQJ4d" 
+        className="text-white hover:text-[#1877F2]">
+        <span className="sr-only">Facebook</span>
+        <FaFacebookSquare size={23}/>
+    </a>
                             </li>
                         </ul>
                     </div>

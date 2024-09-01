@@ -17,7 +17,7 @@ function Footer() {
           {/* Logo and Description */}
           <div className="flex flex-col">
             <p className="text-lg pb-3 text-black text-left text-wrap dark:text-white font-serif mt-1">
-              Parbhuram Gurukul is committed to creating a nurturing and holistic educational environment that promotes intellectual growth, cultural appreciation, personal development, and overall well-being of students.
+              Prabhuram Gurukul is committed to creating a nurturing and holistic educational environment that promotes intellectual growth, cultural appreciation, personal development, and overall well-being of students.
             </p>
           </div>
           {/* Connect With Us */}
