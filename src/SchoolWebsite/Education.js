@@ -13,7 +13,7 @@ const cardsData = [
   {
     image: "./Health.jpeg",
     title: "Healthcare Facilities",
-    description: "Providing dedicated healthcare facilities for students physical well-being and address any health concerns promptly. Having a tie-up with SAVTOL AYURVEDA HEALTHCARE AND RESEARCH FOUNDATION. "
+    description: "Providing dedicated healthcare facilities for students physical well-being and address any health concerns promptly. Having a tie-up with SVATOL AYURVEDA HEALTHCARE AND RESEARCH FOUNDATION. "
   },
   {
     image: "./EducationImags/ComprehensiveKnowledge.jpg",
