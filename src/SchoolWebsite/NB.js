@@ -119,7 +119,7 @@ export default function NB() {
                                         <Link to="/admission" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Admission Form</Link>
                                     </li>
                                     <li className="border-b py-2 max-lg:ml-4">
-                                        <Link to="/syllabus" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Syllabus</Link>
+                                        <Link to="/syllabus" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Extracurricular</Link>
                                     </li>
                                     <li className="border-b py-2 max-lg:ml-4">
                                         <Link to="/events" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Events At Gurukul</Link>

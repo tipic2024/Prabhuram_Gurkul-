@@ -4,7 +4,7 @@ import axios from 'axios';
  
 const Information = () => {
   const initialFormData = {
-    name: '',
+    studentName: '',
     email: '',
     mobileNumber: '',
     gender: '',
@@ -13,6 +13,12 @@ const Information = () => {
     standard: '',
     address: '',
     terms: false,
+    parentName: '',
+    parentOccupation:'',
+    healthInstructions:'',
+    studentImage:'',
+    birthCertificate:'',
+    Aadharcard:''
    
   };
  
@@ -20,12 +26,12 @@ const Information = () => {
   const [submitted, setSubmitted] = useState(null);
  
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { studentName, value, type, checked } = e.target;
     const val = type === 'checkbox' ? checked : value;
  
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: val,
+      [studentName]: val,
     }));
   };
  
@@ -58,20 +64,22 @@ const Information = () => {
           To begin the admission process, please fill out the form below
         </p>
       </div>
-      <div className="max-w-md mx-auto text-left mt-8">
-        <form onSubmit={handleSubmit} className="bg-sky-950 shadow-md rounded px-8 pt-6 pb-8 mb-4">
-          {/* Name */}
-          <div className="mb-4">
+      <div className=" text-left mt-8 border-radius: 1rem">
+        <form onSubmit={handleSubmit} className="bg-sky-950 shadow-md rounded-2xl  mb-4">
+          {/* studentName */}
+        <div className='grid-flow-row'>
+         <div className='pt-2 flex space-x-3 mr-2'>
+         <div className="w-1/2 mx-2 mt-4 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="name">
-              Name
+              Student Name
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="name"
+              id="studentName"
               type="text"
-              placeholder="Name"
-              name="name"
-              value={formData.name}
+              placeholder="student Name"
+              name="studentName"
+              value={formData.studentName}
               onChange={handleChange}
               required
               pattern="^[A-Za-z\s]+$"
@@ -79,7 +87,7 @@ const Information = () => {
             />
           </div>
           {/* Email */}
-          <div className="mb-4">
+          <div className="w-1/2 ml-2 mt-4 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="email">
               Email
             </label>
@@ -96,8 +104,10 @@ const Information = () => {
               title="Enter a valid email address in the format test@gmail.com."
             />
           </div>
+         </div>
+         <div className='flex space-x-3 mr-2'>
           {/* Mobile Number */}
-          <div className="mb-4">
+          <div className="w-1/2 mx-2 mt-4 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="mobileNumber">
               Mobile Number
             </label>
@@ -115,7 +125,7 @@ const Information = () => {
             />
           </div>
           {/* Gender */}
-          <div className="mb-6">
+          <div className="w-1/2 mx-2 mt-4 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="gender">
               Gender
             </label>
@@ -133,8 +143,11 @@ const Information = () => {
               {/* <option value="other">Other</option> */}
             </select>
           </div>
+          </div>
+          
+          <div className='flex space-x-3 mr-2'>
           {/* Blood Group */}
-          <div className="mb-4">
+          <div className="w-1/2 mx-2 mt-4 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="bloodGroup">
               Blood Group
             </label>
@@ -168,7 +181,7 @@ const Information = () => {
             </select>
           </div> */}
           {/* Standard */}
-          <div className="mb-4">
+          <div className="w-1/2 mx-2 mt-4 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="standard">
               Age
             </label>
@@ -190,8 +203,48 @@ const Information = () => {
              
             </select>
           </div>
+          </div>
+
+          <div className='flex space-x-3 mr-2'>
+            {/* Parent name */}
+            <div className="w-1/2 mx-2 mt-4 mb-4">
+            <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="parentName">
+              Parent Name
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="parentName"
+              type="text"
+              placeholder="Parent Name"
+              name="parentName"
+              value={formData.parentName}
+              onChange={handleChange}
+              required
+              pattern="^[A-Za-z\s]+$"
+              title="Enter only alphabets."
+            />
+           </div>
+           {/* parent Occupation */}
+           <div className="w-1/2 mx-2 mt-4 mb-4">
+            <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="parentOccupation">
+            Parent Occupation
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="parentOccupation"
+              type="text"
+              placeholder="Parent Occupation"
+              name="parentOccupation"
+              value={formData.parentOccupation}
+              onChange={handleChange}
+              required
+              pattern="^[A-Za-z\s]+$"
+              title="Enter a only alphabets"
+             />
+            </div>
+          </div>
           {/* Address */}
-          <div className="mb-4">
+          <div className="mx-2 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="address">
               Address
             </label>
@@ -205,10 +258,70 @@ const Information = () => {
               required
             ></textarea>
           </div>
+          
+          <div className='mx-2 mb-4'>
+            <label className='block text-white text-lg font-serif font-bold mb-2' htmlFor="healthInstructions">
+              Health History & Care Instructions</label>
+              <textarea
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="healthInstructions"
+              placeholder="Give the information about Medical History of student, Any Allergy, Special Care or Advice "
+              name="healthInstructions"
+              value={formData.healthInstructions}
+              onChange={handleChange}
+              required
+              ></textarea>
+          </div>
+          
+          <div className='mx-2 flex justify-between mb-2'>
+
+            {/* Student Images */}
+          <div className='w-[25%] mx-2 mb-4'>
+            <label className='block text-white text-lg font-serif font-bold mb-2' htmlFor="studentImage">
+            Student Image</label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-cyan-100 text-black leading-tight focus:outline-none focus:shadow-outline"
+            id="studentImage"
+            type="file"
+            name="studentImage"
+            accept=".jpg, .jpeg, .png"
+            onChange={handleChange}
+            ></input>
+          </div>
+
+          {/* Birth certificate */}
+          <div className='w-[25%] mx-2 mb-4'>
+            <label className='block text-white text-lg font-serif font-bold mb-2' htmlFor="birthCertificate">
+            Birth Certificate</label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-cyan-100 text-black leading-tight focus:outline-none focus:shadow-outline"
+            id="birthCertificate"
+            type="file"
+            name="birthCertificate"
+            accept=".jpg, .jpeg, .png"
+            onChange={handleChange}
+            ></input>
+          </div>
+
+          {/* Aadhar card */}
+          <div className='w-[25%] mx-2 mb-4'>
+            <label className='block text-white text-lg font-serif font-bold mb-2' htmlFor="Aadharcard">
+            Aadhar Card</label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-cyan-100 text-black leading-tight focus:outline-none focus:shadow-outline"
+            id="Aadharcard"
+            type="file"
+            name="Aadharcard"
+            accept=".jpg, .jpeg, .png"
+            onChange={handleChange}
+            ></input>
+          </div>
+          </div>
+          
           {/* New Field */}
        
+
+
+
           {/* Terms and Conditions */}
-          <div className="block text-white text-lg font-serif font-bold mb-2">
+          <div className="mx-2 block text-white text-lg font-serif font-bold mb-2">
             <input
               type="checkbox"
               id="terms"
@@ -222,7 +335,7 @@ const Information = () => {
               I agree to the terms and conditions
             </label>
           </div>
- 
+        </div>
  
  
          
@@ -240,7 +353,7 @@ const Information = () => {
  
  
           {/* Submit Button */}
-          <div className="flex items-center justify-center mt-6">
+          <div className="flex items-center justify-center mt-6 pb-3">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white object-center font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"

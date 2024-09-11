@@ -136,7 +136,7 @@ export default function Contactus() {
                       rows="3"
                       value={formData.queries}
                       onChange={handleChange}
-                      placeholder="Message"
+                      placeholder="I would like to have a franchise of your school"
                     ></textarea>
                     {errors.queries && <p className="text-red-600 text-sm">{errors.queries}</p>}
                   </div>

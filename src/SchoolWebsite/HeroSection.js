@@ -49,9 +49,9 @@ const HeroSection = () => {
         className="bg-cover bg-center min-h-screen flex items-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="invisible lg:mt-96 lg:pl-5 lg:visible">
+        <div className=" sm:mt-0  lg:mt-96 lg:pl-5  hidden md:block ">
           <motion.h1
-            className="invisible md:text-7xl font-serif font-bold mr-5 gradient-text lg:visible"
+            className="text-4xl sm:pt-0  md:text-7xl font-serif font-bold mr-5 gradient-text invisible md:visible   "
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
@@ -59,8 +59,8 @@ const HeroSection = () => {
             Prabhuram Gurukul
           </motion.h1>
         </div>
- 
-        <form onSubmit={handleSubmit} className="container max-w-sm mx-auto p-8 bg-sky-950 rounded-lg shadow-lg mr-10 mb-20" data-aos="fade-left">
+        <div className="md:mr-10 mt-4 mr-10" >
+          <form onSubmit={handleSubmit} className="container max-w-sm mx-auto p-8 bg-sky-950 rounded-lg shadow-lg md:mr-4 pl:4 mr-10 mb-20" data-aos="fade-left">
          
           <h1 className="text-xl font-serif text-white font-bold mb-6">ADMISSION ENQUIRY FOR THE SESSION 2024-25</h1>
           <div className="text-left">
@@ -167,7 +167,15 @@ const HeroSection = () => {
               </button>
             </div>
           </div>
-        </form>
+         </form>
+         <div   className="text-4xl sm:pt-0 md:text-7xl font-serif font-bold mr-5 gradient-text visible md:invisible lg:invisible"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}>            
+          Prabhuram Gurukul
+         
+         </div>
+      </div>
       </div>
     </>
   );

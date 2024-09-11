@@ -55,6 +55,11 @@ export default function Events() {
         alt="image 3"
         className="h-full w-full object-fill"
       />
+      <img 
+        src={require('./GalleryImages/EV4.jpg')}
+        alt="image 4"
+        className="h-full w-[97%] object-fill"
+      />
       
       
     </Carousel>

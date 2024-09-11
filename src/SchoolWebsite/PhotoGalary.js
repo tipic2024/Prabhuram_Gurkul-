@@ -76,7 +76,7 @@ const Carousel = ({ images, title }) => {
                 whileTap={{ scale: 0.9 }}
               >
                 <div className="inline-block px-3">
-                  <div className="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                  <div className="w-64 h-66 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
                     <img 
                       src={image.src} 
                       alt={image.alt}
@@ -125,61 +125,57 @@ const Carousel = ({ images, title }) => {
 
 const Carousel1 = () => {
   const images1 = [
-    { src: require('./First Day of Prabhuram Gurukul/1 (1).jpg'), alt: 'Image 1' },
-    { src: require('./First Day of Prabhuram Gurukul/1 (2).jpg'), alt: 'Image 2' },
+    // { src: require('./First Day of Prabhuram Gurukul/1 (2).jpg'), alt: 'Image 2' },
     // { src: require('./First Day of Prabhuram Gurukul/1 (4).jpg'), alt: 'Image 1' },
-    { src: require('./First Day of Prabhuram Gurukul/1 (5).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (6).jpg'), alt: 'Image 1' },
+    { src: require('./First Day of Prabhuram Gurukul/1 (5).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (7).jpg'), alt: 'Image 1' },
+    { src: require('./First Day of Prabhuram Gurukul/1 (24).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (8).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (9).jpg'), alt: 'Image 1' },
+    { src: require('./First Day of Prabhuram Gurukul/1 (21).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (10).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (11).jpg'), alt: 'Image 1' },
-    { src: require('./First Day of Prabhuram Gurukul/1 (12).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (13).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (14).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (15).jpg'), alt: 'Image 1' },
+    { src: require('./First Day of Prabhuram Gurukul/1 (26).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (16).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (17).jpg'), alt: 'Image 1' },
-    { src: require('./First Day of Prabhuram Gurukul/1 (18).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (19).jpg'), alt: 'Image 1' },
-    { src: require('./First Day of Prabhuram Gurukul/1 (21).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (22).jpg'), alt: 'Image 1' },
+    { src: require('./First Day of Prabhuram Gurukul/1 (18).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (23).jpg'), alt: 'Image 1' },
-    { src: require('./First Day of Prabhuram Gurukul/1 (24).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (25).jpg'), alt: 'Image 1' },
-    { src: require('./First Day of Prabhuram Gurukul/1 (26).jpg'), alt: 'Image 1' },
     { src: require('./First Day of Prabhuram Gurukul/1 (27).jpg'), alt: 'Image 1' },
-   
-
-
-
+    { src: require('./First Day of Prabhuram Gurukul/1 (12).jpg'), alt: 'Image 1' },
+    { src: require('./First Day of Prabhuram Gurukul/1 (1).jpg'), alt: 'Image 1' },
    
   ];
 
   const images2 = [
-    { src: require('./International Yoga Day/1 (1).jpg'), alt: 'Image 1' },
+    { src: require('./International Yoga Day/1 (15).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (2).jpg'), alt: 'Image 2' },
+    { src: require('./International Yoga Day/1 (16).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (3).jpg'), alt: 'Image 2' },
+    { src: require('./International Yoga Day/1 (17).jpg'), alt: 'Image 2' },
+    { src: require('./International Yoga Day/1 (1).jpg'), alt: 'Image 1' },
+    { src: require('./International Yoga Day/1 (14).jpg'), alt: 'Image 2' },
+    { src: require('./International Yoga Day/1 (18).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (4).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (5).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (6).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (7).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (8).jpg'), alt: 'Image 2' },
+    { src: require('./International Yoga Day/1 (22).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (9).jpg'), alt: 'Image 2' },
+    { src: require('./International Yoga Day/1 (21).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (10).jpg'), alt: 'Image 2' },
+    { src: require('./International Yoga Day/1 (20).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (11).jpg'), alt: 'Image 2' },
+    { src: require('./International Yoga Day/1 (19).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (12).jpg'), alt: 'Image 2' },
     { src: require('./International Yoga Day/1 (13).jpg'), alt: 'Image 2' },
-    { src: require('./International Yoga Day/1 (14).jpg'), alt: 'Image 2' },
-    { src: require('./International Yoga Day/1 (15).jpg'), alt: 'Image 2' },
-    { src: require('./International Yoga Day/1 (16).jpg'), alt: 'Image 2' },
-    { src: require('./International Yoga Day/1 (17).jpg'), alt: 'Image 2' },
-    { src: require('./International Yoga Day/1 (18).jpg'), alt: 'Image 2' },
-    { src: require('./International Yoga Day/1 (19).jpg'), alt: 'Image 2' },
-    { src: require('./International Yoga Day/1 (20).jpg'), alt: 'Image 2' },
-    { src: require('./International Yoga Day/1 (21).jpg'), alt: 'Image 2' },
-    { src: require('./International Yoga Day/1 (22).jpg'), alt: 'Image 2' },
 
 
 
