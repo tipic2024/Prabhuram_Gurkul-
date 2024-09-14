@@ -13,7 +13,7 @@ export default function NB() {
     };
 
     return (
-        <nav className="w-full sticky top-0  left-0 lg:max-w-7xl z-40 flex bg-[#767171] max-w-7xl">
+        <nav className="w-full sticky top-0  left-0 lg:max-w-7xl z-40 flex bg-[#767171] ">
             <div className="flex justify-start lg:w-[40%]">
              
             <Link to="/" onClick={handleLinkClick}>

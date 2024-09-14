@@ -1,6 +1,6 @@
+import React, { useRef, useState } from 'react';
+import { postFormData,post } from './util/api';
 
-import React, { useState } from 'react';
-import axios from 'axios';
  
 const Information = () => {
   const initialFormData = {
@@ -23,35 +23,74 @@ const Information = () => {
   };
  
   const [formData, setFormData] = useState(initialFormData);
+
+  const studentImg = useRef(null);
+  const birthImg = useRef(null);
+  const aadharImg = useRef(null);
+
   const [submitted, setSubmitted] = useState(null);
- 
-  const handleChange = (e) => {
-    const { studentName, value, type, checked } = e.target;
-    const val = type === 'checkbox' ? checked : value;
- 
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [studentName]: val,
-    }));
-  };
- 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('Admission.php', formData);
-      console.log('Response:', response.data);
-      if (response.data === "SUCCESS") {
-        setSubmitted('success');
-        setFormData(initialFormData); // Reset form data after successful submission
-      } else {
-        setSubmitted('error');
-      }
-    } catch (error) {
-      console.error('There was an error!', error);
-      setSubmitted('error');
+
+  const handleChange = (event) => {
+    const { name, value, files } = event.target;
+    if (files && files.length > 0) {
+      setFormData({ ...formData, [name]: files[0] }); // store file object
+    } else {
+      setFormData({ ...formData, [name]: name === 'terms' ? event.target.checked : value }); // For checkbox, use checked value
     }
-    // console.log('hello')
-  };
+};
+
+  
+const handleSubmit = async (event) => {
+  event.preventDefault();
+
+  try {
+      // Upload student image
+      const studentImgData = new FormData();
+      studentImgData.append('file', formData.studentImage);
+      studentImgData.append('dest', 'studentImg');
+      const responseImg = await postFormData('/api/fileUpload', studentImgData);
+      const studentImagePath = responseImg.fileName;
+      console.log(studentImagePath);
+
+      // Upload birth certificate
+      const birthCertData = new FormData();
+      birthCertData.append('file', formData.birthCertificate);
+      birthCertData.append('dest', 'birthCertificateImg');
+      const responseBirth = await postFormData('/api/fileUpload', birthCertData);
+      const birthCertPath = responseBirth.fileName;
+      console.log(birthCertPath);
+
+      // Upload Aadhar card
+      const aadharData = new FormData();
+      aadharData.append('file', formData.Aadharcard);
+      aadharData.append('dest', 'AadharcardImg');
+      const responseAadhar = await postFormData('/api/fileUpload', aadharData);
+      const aadharCardPath = responseAadhar.fileName;
+      console.log(aadharCardPath);
+
+      // Combine all data and submit the final form
+      const finalData = {
+          ...formData,
+          studentImage: studentImagePath,
+          birthCertificate: birthCertPath,
+          Aadharcard: aadharCardPath,
+      };
+
+      const response = await post('/api/admissionForm', finalData);
+      console.log('Form submitted successfully:', response);
+
+      setFormData(initialFormData);
+      studentImg.current.value = '';
+      birthImg.current.value = '';
+      aadharImg.current.value = '';
+      setSubmitted('success');
+  } catch (error) {
+      console.error('Error submitting form:', error.message || error.response.data);
+      setSubmitted('error');
+  }
+};
+
+  
  
   return (
     <div className='bg-slate-200'>
@@ -285,6 +324,7 @@ const Information = () => {
             name="studentImage"
             accept=".jpg, .jpeg, .png"
             onChange={handleChange}
+            ref={studentImg}
             ></input>
           </div>
 
@@ -298,6 +338,7 @@ const Information = () => {
             name="birthCertificate"
             accept=".jpg, .jpeg, .png"
             onChange={handleChange}
+            ref={birthImg}
             ></input>
           </div>
 
@@ -311,6 +352,7 @@ const Information = () => {
             name="Aadharcard"
             accept=".jpg, .jpeg, .png"
             onChange={handleChange}
+            ref={aadharImg}
             ></input>
           </div>
           </div>

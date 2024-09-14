@@ -4,6 +4,7 @@ import axios from 'axios';
 import backgroundImage from './GurukulBg3.jpg';
 import '../index.css';
 import { motion } from 'framer-motion';
+import { post } from './util/api';
  
 const HeroSection = () => {
   const initialFormData = {
@@ -29,7 +30,7 @@ const HeroSection = () => {
     e.preventDefault();
     console.log("Called Successfully", formData);
     try {
-      const response = await axios.post('enquiry.php', formData);
+      const response = await post('/api/enquiry', formData);
       console.log('Response:', response.data);
       if (response.data === "SUCCESS") {
         setSubmissionStatus('success');
@@ -59,8 +60,8 @@ const HeroSection = () => {
             Prabhuram Gurukul
           </motion.h1>
         </div>
-        <div className="md:mr-10 mt-4 mr-10" >
-          <form onSubmit={handleSubmit} className="container max-w-sm mx-auto p-8 bg-sky-950 rounded-lg shadow-lg md:mr-4 pl:4 mr-10 mb-20" data-aos="fade-left">
+        <div className="md:mr-10 mt-4 " >
+          <form onSubmit={handleSubmit} className="container w-sm mx-auto p-8 bg-sky-950 rounded-lg shadow-lg  md:mr-4 pl:4 mr-10 mb-20" data-aos="fade-left">
          
           <h1 className="text-xl font-serif text-white font-bold mb-6">ADMISSION ENQUIRY FOR THE SESSION 2024-25</h1>
           <div className="text-left">

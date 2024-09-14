@@ -17,14 +17,14 @@ function ProfileDetails({ profile }) {
                 {/* <h1 className="text-sm uppercase text-left">About me</h1> */}
                 <h1 className="font-serif text-3xl mt-2 text-left">{profile.name}</h1>
                 <h1 className='text-left'>{profile.title}</h1>
-                <p className="text-md mt-0 md:mt-10 text-left">{profile.myInfo}</p>
+                <p className="text-md mt-0 md:mt-5 text-left">{profile.myInfo}</p>
                 <h1 className="lg:flex text-left">{profile.additionalInfo}</h1>
               </div>
             </div>
           
           </>
         ) : (
-          <>
+          < >
             <div className="order-2 md:order-1 w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
               <div>
                 {/* <h1 className="text-sm uppercase text-left">About me</h1> */}
@@ -35,7 +35,7 @@ function ProfileDetails({ profile }) {
               </div>
              
             </div>
-            <div className="order-1 md:order-2 md:w-1/2 h-64 md:h-auto">
+            <div className="order-1 mt-1 md:order-2 md:w-1/2 h-64 md:h-auto">
               <img src={imagePath} className="object-auto w-[95%]  md:w-full h-full" alt="Profile" />
             </div>
           </>

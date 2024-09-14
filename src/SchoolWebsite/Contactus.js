@@ -1,6 +1,8 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import { post } from './util/api';
+
  
 export default function Contactus() {
   const [formData, setFormData] = useState({
@@ -38,16 +40,7 @@ export default function Contactus() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        'contact.php',
-        formData,
-        {
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          withCredentials: true // if your backend requires cookies or authentication
-        }
-      );
+      const response = await post('/api/contactUs',formData);
       console.log('Response:', response.data);
       if (response.data === "SUCCESS") {
         setSubmissionStatus('success');

@@ -80,7 +80,7 @@ const Carousel = ({ images, title }) => {
                     <img 
                       src={image.src} 
                       alt={image.alt}
-                      className="w-full h-full object-cover"
+                      className="w-full h-80% md:h-full object-cover"
                     />
                   </div>
                 </div>

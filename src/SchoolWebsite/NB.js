@@ -27,7 +27,7 @@ export default function NB() {
     };
 
     return (
-        <nav className="w-full sticky top-0 left-0 lg:max-w-7xl z-40 flex bg-[#767171] max-w-7xl">
+        <nav className="w-full sticky top-0 left-0  z-40 flex bg-[#767171] ">
             <div className={`flex justify-start ${navbar ? 'hidden' : 'block'}`}>
                 <Link to="/" onClick={handleLinkClick}>
                     <img className="opacity-100 mt-0 pt-0 object-scale-down h-12 w-10 md:h-16 ml-1 md:w-20 md:object-scale-down bg-transparent" src={Logo} alt="Logo" />
@@ -119,7 +119,7 @@ export default function NB() {
                                         <Link to="/admission" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Admission Form</Link>
                                     </li>
                                     <li className="border-b py-2 max-lg:ml-4">
-                                        <Link to="/syllabus" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Extracurricular</Link>
+                                        <Link to="/syllabus" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Healthcare At Gurukul</Link>
                                     </li>
                                     <li className="border-b py-2 max-lg:ml-4">
                                         <Link to="/events" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Events At Gurukul</Link>
@@ -134,27 +134,27 @@ export default function NB() {
                             <li className="text-white hover:text-white font-serif hover:bg-gray-700 px-4 py-2 rounded-md uppercase">
                                 <Link to="/Contact-us" onClick={handleLinkClick}>Contact Us</Link>
                             </li>
-                            <li className="lg:pt-2">
+                            <li className="lg:pt-2 hidden md:block">
                                 <a href="https://www.youtube.com/" className="text-white hover:text-red-600 ">
                                     <span className="sr-only">Youtube</span>
                                     <FaYoutube size={23} />
                                 </a>
                             </li>
-                             <li className="lg:pt-2">
-                             <a 
-        href="https://www.instagram.com/prabhuram_gurukul99/" 
-        className="text-white hover:text-[#E1306C]">
-        <span className="sr-only">Instagram</span>
-        <FaInstagram size={23} />
-    </a>
+                             <li className="lg:pt-2 hidden md:block">
+                                <a 
+                                    href="https://www.instagram.com/prabhuram_gurukul99/" 
+                                    className="text-white hover:text-[#E1306C]">
+                                    <span className="sr-only">Instagram</span>
+                                    <FaInstagram size={23} />
+                                </a>
                             </li>
-                            <li className="lg:pt-2">
+                            <li className="lg:pt-2 hidden md:block">
                              <a 
-        href="https://www.facebook.com/prabhuram.gurukul99?mibextid=LQQJ4d" 
-        className="text-white hover:text-[#1877F2]">
-        <span className="sr-only">Facebook</span>
-        <FaFacebookSquare size={23}/>
-    </a>
+                                href="https://www.facebook.com/prabhuram.gurukul99?mibextid=LQQJ4d" 
+                                className="text-white hover:text-[#1877F2]">
+                                <span className="sr-only">Facebook</span>
+                                <FaFacebookSquare size={23}/>
+                             </a>
                             </li>
                         </ul>
                     </div>
