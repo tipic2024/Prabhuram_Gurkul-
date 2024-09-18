@@ -34,7 +34,7 @@ const AboutData = [
     id: 4,
     name: 'Dedicated Healthcare Services',
     imagePath: './Health.jpeg',
-    paragraph: "Understanding the importance of health in a student's life, we provide separate healthcare facilities within the Gurukul. Our dedicated health professionals ensure that every student receives the necessary medical attention and guidance to maintain their physical health. We have tie-up Svatol Ayureveda - Healthcare and Research Foundation."
+    paragraph: "Understanding the importance of health in a student's life, we provide separate healthcare facilities within the Gurukul. Our dedicated health professionals ensure that every student receives the necessary medical attention and guidance to maintain their physical health. We have tie up with SVATOL Ayureveda Healthcare and Research Foundation."
   },
   {
     id: 5,
@@ -62,10 +62,10 @@ function AboutusRun() {
   return (
     <div>
       <div className="max-w-7xl mx-auto bg-gray-100">
-        <h1 className="text-4xl font-bold font-serif text-center mb-8" data-aos="fade-up">
+        <h1 className="text-4xl font-bold font-serif text-center mb-8" >
           PRABHURAM GURUKUL<br className='pt-10'/> Nurturing Excellence and Values
         </h1>
-        <p className="text-xl text-center pb-12 mt font-serif" data-aos="fade-up" data-aos-delay="200">
+        <p className="text-xl text-center pb-12 mt font-serif" >
           Welcome to Prabhuram Gurukul, a sanctuary of holistic learning where ancient wisdom meets modern education. Our mission is to cultivate well-rounded individuals through a unique blend of value-based education, theoretical and applied knowledge, and a deep connection to our cultural heritage.
         </p>
       </div>

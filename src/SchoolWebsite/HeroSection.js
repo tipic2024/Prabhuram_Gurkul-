@@ -53,7 +53,8 @@ const HeroSection = () => {
         <div className="mt-0  lg:mt-0 lg:pl-5  hidden md:block ">
          
           <motion.h1
-            className="text-4xl sm:pt-0  md:text-7xl lg:mt-6 text-[#f8f9f8] font-serif font-bold mr-5  invisible md:visible "
+            className="text-4xl sm:pt-0  md:text-7xl lg:mt-6 text-[#F9CB0D] outline-zinc-800 outline-4 font-serif font-bold mr-5  invisible md:visible "
+            style={{ textShadow: '2px 2px 0 #1f2937, -2px -2px 0 #1f2937, 2px -2px 0 #1f2937, -2px 2px 0 #1f2937' }}
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
@@ -172,8 +173,9 @@ const HeroSection = () => {
             </div>
           </div>
          </form>
-         <div   className="text-5xl sm:pt-0 md:text-7xl font-serif font-bold mr-5 text-[#000000]  visible md:invisible lg:invisible"
-            initial={{ x: -100, opacity: 0 }}
+         <div   className="text-5xl sm:pt-0 md:text-7xl font-serif font-bold mr-5 text-[#F9CB0D]  visible md:invisible lg:invisible"
+            style={{ textShadow: '2px 2px 0 #1f2937, -2px -2px 0 #1f2937, 2px -2px 0 #1f2937, -2px 2px 0 #1f2937' }}
+           initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}>            
           Prabhuram Gurukul

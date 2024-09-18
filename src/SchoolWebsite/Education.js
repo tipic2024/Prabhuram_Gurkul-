@@ -7,7 +7,7 @@ const cardsData = [
   {
     image: "./EducationImags/valuedbased.jpg",
     title: "Value Based Education",
-    description: "Emphasizing moral and ethical values in the curriculum to instill integrity, empathy, and a sense of responsibility in students. Learning respects for elders and similar cultureal values.  "
+    description: "Emphasizing moral and ethical values in the curriculum to instill integrity, empathy, and a sense of responsibility in students. Learning respects for elders and similar cultural values.  "
   },
   
   {

@@ -20,7 +20,7 @@ const profileData = [
   {
     id: 2,
     myInfo: "Namaskaram!! Welcome to our Prabhuram Gurukul where tradition and modern education blend seamlessly. I am an experienced Ayurveda practitioner and holistic wellness consultant  integrating  the principles of Ayurveda with a comprehensive approach to wellness, addressing the body, mind, and soul. Multifaceted personality having special interest in Child psychology, Indian Culture, Spirituality, Ayurveda, Yoga and meditation. I always keep on making endeavours to achieve golden mean of spirituality and materialism. As the name Prabhuram itself implies Practical execution of vision of learning qualities from lord Rama and applying them in the life of children and transforming children making them asset not only for the nation but also for the world and setting Ramrajya in the World.",
-    name: 'Dr. Shubham Shete',
+    name: 'Dr. Shubham S. Shete',
     title: '[ Founder, Director and Chief Advisor ]',
     // additionalInfo: 'PhD in Ayurveda',
     education: 'Master\'s degree in Data Science',

@@ -48,7 +48,7 @@ const Syllabus = () => {
         
       </Carousel>
       <div className='mt-4 mb-4 border-solid-black'>
-        <b><p className='text-2xl'>"Free Suvarn-prashan Camp -Every Month on the Asupicious day of Pushya Nakshatra" </p></b><br/>
+        <b><p className='text-2xl'>"Free Suvarn-Prashan Camp -Every Month on the Auspicious day of Pushya Nakshatra" </p></b><br/>
         <p><b>By " SVATOL AYURVEDA HEALTHCARE AND RESEARCH FOUNDATION " 🌱<br/> IN COLLABORATION WITH " PRABHURAM GURUKUL "📖 and " KILBIL ACTIVE PRE-SCHOOL "📚 at Nashik City.</b></p>
       </div>
     

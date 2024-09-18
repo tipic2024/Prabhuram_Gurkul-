@@ -5,25 +5,25 @@ const GurukulData = [
   {
     id: 1,
     name: 'Study Hall',
-   paragraph: 'Prabhuram Gurukuls study hall promotes a culture of continuous improvement and academic excellence through regular assessments and goal-setting sessions. The curriculum is designed to be dynamic, integrating real-world applications and current research to enrich students learning experiences. Interactive whiteboards and multimedia resources enhance classroom engagement, making learning both interactive and enjoyable The halls dedicated faculty members provide mentorship and academic counseling, guiding students towards achieving their full potential.',
+   paragraph: "Prabhuram Gurukul's study hall promotes a culture of continuous improvement and academic excellence through regular assessments and goal-setting sessions. The curriculum is designed to be dynamic, integrating real-world applications and current research to enrich students learning experiences. Interactive whiteboards and multimedia resources enhance classroom engagement, making learning both interactive and enjoyable. Dedicated faculty members provide mentorship and academic counseling, guiding students towards achieving their full potential.",
    imagePath: './study hall in school.jpg'
   },
   {
     id: 2,
     name: 'Outdoor Sport',
-    paragraph:'Prabhuram Gurukuls outdoor sports facilities provide children with ample opportunities for physical development and teamwork. The spacious grounds include fields for  badminton, archery, cricket, and athletics. Sport teachers guide the students , emphasizing fitness, discipline, and sportsmanship. Regular inter-house competitions foster a healthy competitive spirit. Outdoor sports are integral to the curriculum, promoting physical health, strategic thinking, and collaboration among students.',
+    paragraph:"Prabhuram Gurukul's outdoor sports facilities provide children with ample opportunities for physical development and teamwork. The spacious grounds include fields for  badminton, archery, cricket, and athletics. Sport teachers guide the students , emphasizing fitness, discipline, and sportsmanship. Regular inter-house competitions foster a healthy competitive spirit. Outdoor sports are integral to the curriculum, promoting physical health, strategic thinking, and collaboration among students.",
     imagePath: './outdoor.jpeg'
   },
   {
     id: 3,
     name: 'Indoor Sport',
-    paragraph:'Prabhuram Gurukuls indoor sports facilities offer a variety of activities for children to enjoy and excel in.  Students are guided by skilled instructors who emphasize fitness, discipline, and skill development. Regular practice sessions and friendly matches foster a sense of achievement and teamwork. Indoor sports are a vital part of the curriculum, promoting physical health, mental agility, and camaraderie among students.',
+    paragraph:"Prabhuram Gurukul's indoor sports facilities offer a variety of activities for children to enjoy and excel in.  Students are guided by skilled instructors who emphasize fitness, discipline, and skill development. Regular practice sessions and friendly matches foster a sense of achievement and teamwork. Indoor sports are a vital part of the curriculum, promoting physical health, mental agility, and camaraderie among students.",
     imagePath: './Indoor.jpg'
   },
   {
     id: 4,
     name: 'Food Section ',
-    paragraph:"Prabhuram Gurukul's food section is dedicated to providing nutritious and delicious meals for children. The spacious dining hall is clean and inviting, with a friendly atmosphere. Meals are prepared using fresh, locally-sourced ingredients, ensuring a balanced diet that includes a variety of fruits, vegetables, grains, and proteins. Special attention is given to dietary requirements and preferences. The menu includes traditional and contemporary dishes, promoting healthy eating habits. Hygienic practices are strictly followed, and students are encouraged to appreciate the value of wholesome food. ",
+    paragraph:"Prabhuram Gurukul's food section is dedicated to providing nutritious and delicious meals for children. The spacious dining hall is clean and inviting, with a friendly atmosphere. Meals are Purely Vegetarian and are prepared using fresh, locally-sourced ingredients, ensuring a balanced diet that includes a variety of fruits, vegetables, grains, and proteins. Special attention is given to dietary requirements and preferences. The menu includes traditional and contemporary dishes, promoting healthy eating habits. Hygienic practices are strictly followed, and students are encouraged to appreciate the value of wholesome food. ",
     imagePath: './foodSection.jpeg'
   },
   {
@@ -47,7 +47,7 @@ const GurukulData = [
   {
     id: 8,
     name: 'Library Section ',
-    paragraph:"Prabhuram Gurukul's library section is a treasure trove of knowledge and imagination, catering to the intellectual curiosity of its students. The library is well organised, with shelves lined with a diverse collection of books, ranging from academic textbooks to fiction and non-fiction literature. It offers a quiet and conducive environment for reading and research, encouraging students to explore various subjects and expand their horizons. The library is equipped with comfortable seating areas and ideal for both individual study and group discussions. ",
+    paragraph:"Prabhuram Gurukul's library section is a treasure trove of knowledge and imagination, catering to the intellectual curiosity of its students. The library is well organised, with shelves lined with a diverse collection of books, ranging from academic textbooks to Vedic traditional books of stories of Ramayana, Mahabharata  also Bhagvadgita etc spiritual literature. It offers a quiet and conducive environment for reading and research, encouraging students to explore various subjects and expand their horizons. The library is equipped with comfortable seating areas and ideal for both individual study and group discussions. ",
     imagePath: './library.jpeg'
   },
   {

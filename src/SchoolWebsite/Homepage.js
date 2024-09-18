@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,HashRouter } from 'react-router-dom';
 import Navbar from './Navbar'
 import Home from './Home'
 import Information from './Information'
@@ -20,7 +20,7 @@ function Homepage() {
   return (
     <div>
       
-        <Router>
+        <HashRouter>
         
         <NB/>
         <Routes>
@@ -32,12 +32,12 @@ function Homepage() {
           <Route path="/Contact-us" element={<Contactus/>} />
           <Route path="/aboutmanagement" element={<ProfileRun/>} />
           <Route path="/whygurukul" element={<WhyGurukulRun/>} />
-          <Route path="/whygurukul" element={<WhyGurukulRun/>} />
+          {/* <Route path="/whygurukul" element={<WhyGurukulRun/>} /> */}
           <Route path="/events" element={<Events/>} />
           <Route path="/syllabus" element={<Syllabus/>} />
         </Routes>
          <Footer/>
-      </Router>
+      </HashRouter>
     </div>
   )
 }
