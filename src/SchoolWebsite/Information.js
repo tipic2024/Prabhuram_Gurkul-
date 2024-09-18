@@ -22,8 +22,9 @@ const Information = () => {
    
   };
  
+ 
   const [formData, setFormData] = useState(initialFormData);
-
+  console.log(formData.terms);
   const studentImg = useRef(null);
   const birthImg = useRef(null);
   const aadharImg = useRef(null);
@@ -110,7 +111,7 @@ const handleSubmit = async (event) => {
          <div className='pt-2 flex space-x-3 mr-2'>
          <div className="w-1/2 mx-2 mt-4 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="name">
-              Student Name
+              Student's Name
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -248,7 +249,7 @@ const handleSubmit = async (event) => {
             {/* Parent name */}
             <div className="w-1/2 mx-2 mt-4 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="parentName">
-              Parent Name
+              Parent's Name
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -266,7 +267,7 @@ const handleSubmit = async (event) => {
            {/* parent Occupation */}
            <div className="w-1/2 mx-2 mt-4 mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="parentOccupation">
-            Parent Occupation
+            Parent's Occupation
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -317,7 +318,7 @@ const handleSubmit = async (event) => {
             {/* Student Images */}
           <div className='w-[25%] mx-2 mb-4'>
             <label className='block text-white text-lg font-serif font-bold mb-2' htmlFor="studentImage">
-            Student Image</label>
+            Student's Image</label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-cyan-100 text-black leading-tight focus:outline-none focus:shadow-outline"
             id="studentImage"
             type="file"
@@ -331,7 +332,7 @@ const handleSubmit = async (event) => {
           {/* Birth certificate */}
           <div className='w-[25%] mx-2 mb-4'>
             <label className='block text-white text-lg font-serif font-bold mb-2' htmlFor="birthCertificate">
-            Birth Certificate</label>
+            Student's Birth Certificate</label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-cyan-100 text-black leading-tight focus:outline-none focus:shadow-outline"
             id="birthCertificate"
             type="file"
@@ -345,7 +346,7 @@ const handleSubmit = async (event) => {
           {/* Aadhar card */}
           <div className='w-[25%] mx-2 mb-4'>
             <label className='block text-white text-lg font-serif font-bold mb-2' htmlFor="Aadharcard">
-            Aadhar Card</label>
+            Student's Aadhar Card</label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-cyan-100 text-black leading-tight focus:outline-none focus:shadow-outline"
             id="Aadharcard"
             type="file"

@@ -77,11 +77,11 @@ export default function NB() {
                 </div>
                 <div>
                     <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
-                        <ul className="items-start justify-start md:justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ml-4">
-                            <li className="text-white hover:text-white font-serif uppercase hover:bg-gray-700 px-4 py-2 rounded-md">
+                        <ul className="items-start justify-start md:justify-center space-y-1 md:flex md:space-x-6 md:space-y-0 ml-4">
+                            <li className="text-white max-lg:border-b hover:text-white font-serif uppercase hover:bg-gray-700 px-4 py-0 md:py-2 rounded-md">
                                 <Link to="/" onClick={handleLinkClick}>Home</Link>
                             </li>
-                            <li className="group max-lg:border-b max-lg:py-2 relative">
+                            <li className="group max-lg:border-b max-lg:py-2 pl-12 md:pl-0 relative">
                                 <button onClick={toggleDropdownAbout} className="hover:text-white lg:pt-2 text-white text-[15px] font-serif lg:hover:fill-[#007bff] block uppercase">
                                     About Us
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" className="ml-1 inline-block" viewBox="0 0 24 24">
@@ -135,7 +135,7 @@ export default function NB() {
                                 <Link to="/Contact-us" onClick={handleLinkClick}>Contact Us</Link>
                             </li>
                             <li className="lg:pt-2 hidden md:block">
-                                <a href="https://www.youtube.com/" className="text-white hover:text-red-600 ">
+                                <a href="https://youtube.com/@prabhuram-gurukul?si=akseskXxPufBftjj" className="text-white hover:text-red-600 ">
                                     <span className="sr-only">Youtube</span>
                                     <FaYoutube size={23} />
                                 </a>

@@ -22,7 +22,7 @@ export default function Events() {
     
       loop
       autoplay
-      className="rounded-xl lg:max-w-7xl h-[80vh] "
+      className="rounded-xl  w-full h-[30vh] md:h-[80vh] "
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
@@ -58,15 +58,11 @@ export default function Events() {
       <img 
         src={require('./GalleryImages/EV4.jpg')}
         alt="image 4"
-        className="h-full w-[97%] object-fill"
+        className="h-full w-full object-fill"
       />
-      
-      
     </Carousel>
-    
-  
-      
-                <div className="flex justify-center mt-3">
+ 
+        <div className="flex justify-center mt-3">
                 <Link to="/HeroSection">
                  <button
                   type="submit"

@@ -9,7 +9,8 @@ const Aboutuspage = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white">
+   
+      <div className="bg-gray-900 text-white">
       <div className="max-h-72"></div>
       <div className="min-h-screen p-8">
         <div className="max-w-7xl mx-auto">

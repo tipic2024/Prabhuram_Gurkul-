@@ -68,7 +68,7 @@ const Carousel = ({ images, title }) => {
           {"<"}
         </button>
         <div ref={containerRef} className="flex overflow-x-scroll pb-10 hide-scroll-bar">
-          <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10">
+          <div className="flex flex-nowrap  md:ml-20 ml-10">
             {images.map((image, index) => (
               <motion.div 
                 key={index}

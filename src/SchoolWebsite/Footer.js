@@ -60,9 +60,9 @@ function Footer() {
       </div>
       <div className="flex justify-center gap-4 mt-8 space-x-4">
         {/* Social media icons */}
-        <img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30" alt="Facebook" />
-        <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" width="30" height="30" alt="Twitter" />
-        <img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30" alt="Instagram" />
+        <a href='https://www.facebook.com/prabhuram.gurukul99?mibextid=LQQJ4d'><img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30" alt="Facebook" /></a>
+        
+        <a href='https://www.instagram.com/prabhuram_gurukul99/'><img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30" alt="Instagram" /></a>
       </div>
       {/* Divider */}
       <hr className="my-6 border-gray-200 dark:border-gray-700" />

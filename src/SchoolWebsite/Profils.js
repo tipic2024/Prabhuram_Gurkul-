@@ -4,7 +4,6 @@ import ProfileDetails from './Profile';
  
 const profileData = [
  
-
   {
     id: 1,
     name: 'Mr.Sandip D. Shete',
@@ -47,15 +46,28 @@ const profileData = [
  
 ];
  
-function ProfileRun() {
+function Profils() {
   return (
-    <div>
-      {profileData.map((profile) => (
-        <ProfileDetails key={profile.id} profile={profile} />
-      ))}
-    </div>
+    
+<div className="bg-[#FFF6E7] flex justify-center lg:h-[70vh]">
+   <div className="w-100% md:w-[95%] flex flex-col md:flex-row h-[70vh]">
+   <div className=" w-full mt-2 md:w-1/2  h-full md:h-auto">
+            <img src={require('./Sandip D. Shete4.jpg')} className="object-fit ml-0 md:ml-8 mr-4 w-[100%] md:w-[95%] h-full" alt="Profile" />
+            </div>
+             <div className="w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
+             <div>
+                {/* <h1 className="text-sm uppercase text-left">About me</h1> */}
+                <h1 className="font-serif text-3xl mt-2 text-left">Mr.Sandip D. Shete</h1>
+                <h1 className='text-left font-semibold'> [ Founder and Managing Director ]</h1>
+                <p className="text-md mt-0 md:mt-5 text-left">Namaskaram!!I am Mr. Sandip D. Shete; Founder and Managing Director of Prabhuram Gurukul.I have been extensively working in the field of education since 15 years providing high quality learning experience for students by my extra-ordinary leadership skills and proper execution of strategic goals for the educational development of students.At our Prabhuram Gurukul, our mission is to provide an enriching environment where academic excellence, personal growth, and ethical values are seamlessly integrated.I am committed to creating innovative learning experiences, supporting our educators, and ensuring that every student has the resources and guidance they need to succeed.</p>
+                <h1 className="lg:flex text-left">MS in Ayureda</h1>
+              </div>
+            </div>
+   </div>
+</div>
+
   );
 }
  
-export default ProfileRun;
+export default Profils;
  

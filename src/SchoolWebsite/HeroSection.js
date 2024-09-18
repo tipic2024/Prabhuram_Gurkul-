@@ -50,15 +50,18 @@ const HeroSection = () => {
         className="bg-cover bg-center min-h-screen flex items-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className=" sm:mt-0  lg:mt-96 lg:pl-5  hidden md:block ">
+        <div className="mt-0  lg:mt-0 lg:pl-5  hidden md:block ">
+         
           <motion.h1
-            className="text-4xl sm:pt-0  md:text-7xl font-serif font-bold mr-5 gradient-text invisible md:visible   "
+            className="text-4xl sm:pt-0  md:text-7xl lg:mt-6 text-[#f8f9f8] font-serif font-bold mr-5  invisible md:visible "
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
             Prabhuram Gurukul
           </motion.h1>
+         
+          
         </div>
         <div className="md:mr-10 mt-4 " >
           <form onSubmit={handleSubmit} className="container w-sm mx-auto p-8 bg-sky-950 rounded-lg shadow-lg  md:mr-4 pl:4 mr-10 mb-20" data-aos="fade-left">
@@ -169,7 +172,7 @@ const HeroSection = () => {
             </div>
           </div>
          </form>
-         <div   className="text-4xl sm:pt-0 md:text-7xl font-serif font-bold mr-5 gradient-text visible md:invisible lg:invisible"
+         <div   className="text-5xl sm:pt-0 md:text-7xl font-serif font-bold mr-5 text-[#000000]  visible md:invisible lg:invisible"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}>            
